@@ -1,0 +1,10 @@
+var nombre, apellido, edad, telefono;
+nombre = prompt('Por favor ejecute su nombre');
+apellido = prompt('Por favor ejecute su apellido');
+edad = prompt('Por favor ejecute su edad');
+telefono = prompt('Por favor ejecute su numero de telefono');
+edad=parseInt(edad);
+telefono=parseInt(telefono);
+console.log("Hola, tu nombre y tu apellido es ", nombre, " ", apellido, " tienes ", edad, " años y tu numero de telefono es ", telefono);
+document.write("Hola, tu nombre y tu apellido es ", nombre, " ", apellido, " tienes ", edad, " años y tu numero de telefono es ", telefono);
+window.alert("Hola, tu nombre y tu apellido es " + nombre + " " + apellido + " tienes " + edad + " años y tu numero de telefono es " + telefono);

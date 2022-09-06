@@ -1,0 +1,62 @@
+.colorF
+{
+    float: left;
+    width: 10%;
+    min-height: 11em;
+    margin-top: 2%;
+    margin-bottom: 5px;
+    border: 12px solid #000;
+    background-color: red;
+}
+.colorD
+{
+    float: left;
+    width: 10%;
+    min-height: 11em;
+    margin-top: 2%;
+    margin-bottom: 5px;
+    border: 12px solid #000;
+    background-color: blue;
+}
+.cambioP
+{
+    border: 12px solid #000;
+    background-color: green;
+    margin-left: 4%;
+    margin-top: 6%;
+    width: 11%;
+    height: 7em;
+}
+.cambio2
+{
+    border: 12px solid #000;
+    background-color: yellow;
+    margin-left: 4%;
+    margin-top: 6%;
+    width: 11%;
+    height: 7em;
+}
+.cambio3
+{
+    border: 12px solid #000;
+    background-color: red;
+    margin-left: 4%;
+    margin-top: 6%;
+    width: 11%;
+    height: 7em;
+}
+.principal
+{
+    float: left;
+    width: 100%;
+    min-height: 42em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: #ffff;
+}
+body
+{
+    background: #ddd;
+}
+
+

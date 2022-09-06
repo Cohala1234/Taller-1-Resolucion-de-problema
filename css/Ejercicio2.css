@@ -1,0 +1,228 @@
+/* FONTS GOOGLE */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+/* VARIABLES */
+
+:root {
+    --blanco: #E0E0E0;
+    --azul-opacidad: black;
+    --bg-menu: #F76E33;
+    --bg-body: #C7E1FF;
+}
+
+/* GENERALES */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    color: var(--blanco);
+}
+
+/* LAYOUT */
+
+.menu{
+    margin-top: 20%;
+}
+.menu-dashboard {
+    max-width: 150px;
+    height: 100vh;
+    background: var(--bg-menu);
+    padding: 20px;
+    transition: max-width .3s ease;
+}
+
+.top-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-menu .logo {
+    display: flex;
+    align-items: center;
+}
+
+.top-menu .logo img {
+    width: 80%;
+    transition: width .3s ease;
+}
+
+.top-menu .logo span {
+    font-size: 20px;
+    margin-left: 20px;
+    display: none;
+}
+
+.top-menu .toggle {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.top-menu .toggle i {
+    font-size: 35px;
+}
+
+/* INPUT BOX 
+
+.input-search {
+    width: 100%;
+    margin: 50px 0;
+    background-color: var(--azul-opacidad);
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.input-search i {
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.input-search .input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    height: 30px;
+    color: var(--blanco);
+    font-size: 22px;
+    display: none;
+}
+*/
+
+/* ENLACES MENU */
+
+.menu .enlace {
+    width: 100%;
+    padding: 7px 0 11px 21px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all .3s ease;
+}
+
+.menu .enlace:hover {
+    background: var(--azul-opacidad);
+}
+
+.menu .enlace i {
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+.menu .enlace a {
+    
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+.menu .enlace span {
+
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+.menu-dashboard.open {
+    max-width: 300px;
+}
+
+.menu-dashboard.open .top-menu .logo span {
+    display: block;
+}
+
+.menu-dashboard.open .input-search
+.menu-dashboard.open .menu .enlace {
+    width: auto;
+}
+
+.menu-dashboard.open .input-search .input {
+    display: block;
+}
+
+.menu-dashboard.open .menu .enlace {
+    padding: 16px;
+}
+
+.menu-dashboard.open .menu .enlace span {
+    opacity: 1;
+}
+
+
+/*SEPARADOR*/
+
+.separador
+{
+    width: 81em;
+    height: 41.2em;
+    margin-left: 10.4%;
+    margin-top: -57.2%;
+}
+#texto
+{
+    margin-left: 25%;
+    font-size: 2em;
+    margin-top: 5%;
+}
+#palabra
+{
+    width: 44%;
+    margin-left: 28%;
+}
+.cajas
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+}
+#tituloo
+{
+    margin-left: 36%;
+    font-size: 4em;
+    margin-top: 12%;
+}
+#grados
+{
+    margin-left: 39%;
+    width: 61%;
+}
+#gradosQ
+{
+    margin-left: 39%;
+    width: 61%;
+}
+#texto1
+{
+    margin-left: 25%;
+    font-size: 2em;
+    margin-top: 2%;
+}
+#texto2
+{
+    margin-left: 25%;
+    font-size: 2em;
+    margin-top: 2%;
+}
+#calcular
+{
+    margin: 0% auto;
+    padding: 2%;
+    width: 10em;
+    margin-top: 2%;
+}
+#arreglo
+{
+    width: 58em;
+}
