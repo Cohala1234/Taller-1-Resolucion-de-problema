@@ -24,11 +24,7 @@ enlacesMenu.forEach(enlace => {
     })
 })
 
-
-/*EJERCICIO2*/
-/*CONVERTIR GRADOS*/
-
-const boton = document.getElementById('calcular');
+var boton = document.getElementById('calcular');
 
 boton.addEventListener('click', function()
 {

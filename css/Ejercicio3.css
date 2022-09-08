@@ -159,3 +159,13 @@ body {
 .menu-dashboard.open .menu .enlace span {
     opacity: 1;
 }
+
+/*SEPARADOR*/
+.separador
+{
+    width: 81em;
+    height: 41.2em;
+    margin-left: 10.4%;
+    margin-top: -48.2%;
+    background-color: red;
+}
