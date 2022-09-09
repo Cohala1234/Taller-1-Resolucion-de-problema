@@ -8,7 +8,7 @@
     <!-- BOX ICONS -->
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/Ejercicio4.css">
 </head>
 <body>
     <div class="menu-dashboard">
@@ -64,6 +64,41 @@
             </div>
         </div>
     </div>
-    <script src="js/dashboard.js" defer></script>
+    <section class="separador">
+        <h1 class="tit">Instructores</h1>
+        <label for="nombre">Nombres:</label>
+        <select name="nombre" id="nombre" class="form-select" aria-label="Disabled select example" >
+                <option id="cris" value="1">Cristian</option>
+                <option id="tati" value="2">Tatiana</option>
+                <option id="caro" value="3">Carolina</option>
+                <option id="adri" value="4">Adriana</option>
+                <option id="fern" value="5">Fernando</option>
+                <option id="yane" value="6">Yaneth</option>
+                <option id="yane" value="7">Luis</option>          
+        </select>
+        <label for="apellido">Apellidos:</label>
+        <select name="apellido" id="apellido" class="form-select" aria-label="Disabled select example" >
+                <option id="" value="1">Duarte</option>
+                <option id="" value="2">Buitrago</option>
+                <option id="" value="3">Galindo</option>
+                <option id="" value="4">Cabrera</option>
+                <option id="" value="5">Forero</option>
+                <option id="" value="6">Baquero</option>
+                <option id="" value="7">Castillo</option>          
+        </select>
+        <label for="actividad">Actividad:</label>
+        <select name="actividad" id="actividad" class="form-select" aria-label="Disabled select example">
+            <option id="" value="1">Front-end</option>
+            <option id="" value="2">Proyecto</option>
+            <option id="" value="3">Base de datos</option>
+            <option id="" value="4">Cultura fisica</option>
+            <option id="" value="5">Gestión ambiental</option>
+            <option id="" value="6">PHP</option>   
+            <option id="" value="7">Calidad</option>  
+            <option id="" value="8">Experiencia de usuario</option>           
+        </select>
+    <button id="respuesta" class="btn btn-dark">Verificar</button>
+    </section>
+    <script src="js/Ejercicio4.js" defer></script>
 </body>
 </html>
