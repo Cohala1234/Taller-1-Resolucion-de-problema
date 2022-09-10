@@ -104,7 +104,7 @@ body {
 
 .menu .enlace {
     width: 100%;
-    padding: 7px 0 18px 21px;
+    padding: 7px 0 20px 38px;
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -153,7 +153,7 @@ body {
 }
 
 .menu-dashboard.open .menu .enlace {
-    padding: 16px;
+    padding: 20px;
 }
 
 .menu-dashboard.open .menu .enlace span {
@@ -352,9 +352,48 @@ img.card-img-top {
 {
     margin-top: 4%;
 }
-
+#areaC
+{
+    margin-top: 4%;
+}
 .diseno
 {
     margin-top: 2%;
     margin-left: 84%;
+}
+#areaT
+{
+    margin-top: 4%;
+}
+#areaCu
+{
+    margin-top: 4%;
+}
+#areaR
+{
+    margin-top: 4%;
+}
+#alturaR
+{
+    margin-top: 2%;
+}
+#alturaAR
+{
+    margin-top: 2%; 
+}
+#lado2
+{
+    margin-top: 2%; 
+}
+#lado3
+{
+    margin-top: 2%; 
+}
+#baseT
+{
+    margin-top: 2%; 
+}
+#alturaT
+{
+    margin-top: 2%; 
 }

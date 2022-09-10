@@ -23,6 +23,7 @@ enlacesMenu.forEach(enlace => {
         iconoMenu.classList.replace("bx-menu", "bx-x")
     })
 })
+
 //Circulo
     //Perimetro
     let perimetroC=document.getElementById("perimetroC");
