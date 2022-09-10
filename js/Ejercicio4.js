@@ -24,6 +24,13 @@ enlacesMenu.forEach(enlace => {
     })
 })
 
+enlacesMenu.forEach(enlace => {
+    enlace.addEventListener("click", () => {
+        menuDashboard.classList.add("open")
+        iconoMenu.classList.replace("bx-menu", "bx-x")
+    })
+})
+
 var verificar = document.getElementById('verificar');
 
 verificar.addEventListener('click', function()
@@ -61,12 +68,56 @@ verificar.addEventListener('click', function()
       {
             window.alert("¡RESPUESTA CORRECTA!")
       }
-      else if(nombres == 1 && apellidos == 7 && materia == 7)
+      else if(nombres == 1 && apellidos == 7 && materia == 2)
       {
             window.alert("¡RESPUESTA INCORRECTA!")
       }
-      else if()
+      else if(nombres == 1 && apellidos == 7 && materia == 3)
       {
             window.alert("¡RESPUESTA INCORRECTA!")
       }    
+      else if(nombres == 1 && apellidos == 7 && materia == 4)
+      {
+            window.alert("¡RESPUESTA INCORRECTA!")
+      }  
+      else if(nombres == 1 && apellidos == 7 && materia == 5)
+      {
+            window.alert("¡RESPUESTA INCORRECTA!")
+      }  
+      else if(nombres == 1 && apellidos == 7 && materia == 6)
+      {
+            window.alert("¡RESPUESTA INCORRECTA!")
+      }  
+      else if(nombres == 1 && apellidos == 1 && materia == 1)
+      {
+            window.alert("¡RESPUESTA INCORRECTA!")
+      }  
+      else if(nombres == 1 && apellidos == 2 && materia == 1)
+      {
+            window.alert("¡RESPUESTA INCORRECTA!")
+      }  
+      else if(nombres == 1 && apellidos == 3 && materia == 1)
+      {
+            window.alert("¡RESPUESTA INCORRECTA!")
+      }  
+      else if(nombres == 1 && apellidos == 4 && materia == 1)
+      {
+            window.alert("¡RESPUESTA INCORRECTA!")
+      }  
+      else if(nombres == 1 && apellidos == 5 && materia == 1)
+      {
+            window.alert("¡RESPUESTA INCORRECTA!")
+      }  
+      else if(nombres == 1 && apellidos == 6 && materia == 1)
+      {
+            window.alert("¡RESPUESTA INCORRECTA!")
+      }  
+      else if(nombres == 1 && apellidos == 1 && materia == 1)
+      {
+            window.alert("¡RESPUESTA INCORRECTA!")
+      }  
+      else
+      {
+            window.alert("¡RESPUESTA INCORRECTA!")
+      }
 })
