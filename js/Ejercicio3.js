@@ -24,17 +24,25 @@ enlacesMenu.forEach(enlace => {
     })
 })
 
-const averiguar = document.getElementById('trig');
-averiguar.addEventListener('click',()=>{
-      const lad1 = document.getElementById('lado1').value;
-      const lad2 = document.getElementById('lado2').value;
-      const lad3 = document.getElementById('lado3').value;
-      parseFloat(lad1);parseFloat(lad2);parseFloat(lad3);
-      if(lad1==lad2 && lad1 ==lad3){
-            alert(`El triangulo es equilatero ya que sus lados son iguales.`)
-      }else if(lad1==lad2 || lad2==lad3 || lad1==lad3){
-            alert(`El triangulo es isósceles, dos lados son similares.`);
-      }else{
-            alert(`El triangulo es ecaleno, todos sus lados son diferentes.`);
-      }  
-})
+var triangulo = document.getElementById('triangulo');
+
+triangulo.addEventListener('click', function()
+{
+    var lado1 = document.getElementById('lado1').value;
+    var lado2 = document.getElementById('lado2').value;
+    var lado3 = document.getElementById('lado3').value;
+    parseFloat(lado1, lado2, lado3);
+
+    if(lado1 == lado2 && lado1 == lado3)
+    {
+        window.alert(`El triangulo es EQUILATERO porque sus lados son iguales.`)
+    }
+    else if(lado1 == lado2 || lado2 == lado3 || lado1 == lado3)
+    {
+        window.alert(`El triangulo es ISÓSCELES porque dos lados son similares.`);
+    }
+    else
+    {
+        window.alert(`El triangulo es ESCALENO porque todos sus lados son diferentes.`);
+    }  
+});

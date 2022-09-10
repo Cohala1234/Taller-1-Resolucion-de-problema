@@ -104,7 +104,7 @@ body {
 
 .menu .enlace {
     width: 100%;
-    padding: 7px 0 18px 21px;
+    padding: 7px 0 20px 38px;
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -153,7 +153,7 @@ body {
 }
 
 .menu-dashboard.open .menu .enlace {
-    padding: 16px;
+    padding: 20px;
 }
 
 .menu-dashboard.open .menu .enlace span {
@@ -164,8 +164,43 @@ body {
 .separador
 {
     width: 81em;
-    height: 41.2em;
+    height: 35.2em;
     margin-left: 10.4%;
     margin-top: -48.2%;
-    background-color: red;
+}
+#tituloo
+{
+    margin-left: 36%;
+    font-size: 4em;
+    margin-top: 5%;
+}
+#separador2
+{
+    width: 36%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+}
+#nombres
+{
+    width: 100%;
+}
+#apellidos
+{
+    width: 100%;
+}
+#materia
+{
+    width: 100%;
+}
+#texto
+{
+    margin-left: -7%;
+    font-size: 2em;
+    margin-top: 3%;
+}
+#verificar
+{
+    margin-top: 6%;
 }

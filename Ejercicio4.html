@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
     <title>Ejercicio 4</title>
     <!-- BOX ICONS -->
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
@@ -28,10 +29,6 @@
         </div> -->
         <!-- MENU -->
         <div class="menu">
-            <div class="enlace">
-                <i class="bx bx-grid-alt"></i>
-                <a href="dashboard.html"><span>Dashboard</span></a>
-            </div>
 
             <div class="enlace">
                 <i class="bx bx-user"></i>
@@ -65,39 +62,50 @@
         </div>
     </div>
     <section class="separador">
-        <h1 class="tit">Instructores</h1>
-        <label for="nombre">Nombres:</label>
-        <select name="nombre" id="nombre" class="form-select" aria-label="Disabled select example" >
-                <option id="cris" value="1">Cristian</option>
-                <option id="tati" value="2">Tatiana</option>
-                <option id="caro" value="3">Carolina</option>
-                <option id="adri" value="4">Adriana</option>
-                <option id="fern" value="5">Fernando</option>
-                <option id="yane" value="6">Yaneth</option>
-                <option id="yane" value="7">Luis</option>          
-        </select>
-        <label for="apellido">Apellidos:</label>
-        <select name="apellido" id="apellido" class="form-select" aria-label="Disabled select example" >
-                <option id="" value="1">Duarte</option>
-                <option id="" value="2">Buitrago</option>
-                <option id="" value="3">Galindo</option>
-                <option id="" value="4">Cabrera</option>
-                <option id="" value="5">Forero</option>
-                <option id="" value="6">Baquero</option>
-                <option id="" value="7">Castillo</option>          
-        </select>
-        <label for="actividad">Actividad:</label>
-        <select name="actividad" id="actividad" class="form-select" aria-label="Disabled select example">
-            <option id="" value="1">Front-end</option>
-            <option id="" value="2">Proyecto</option>
-            <option id="" value="3">Base de datos</option>
-            <option id="" value="4">Cultura fisica</option>
-            <option id="" value="5">Gestión ambiental</option>
-            <option id="" value="6">PHP</option>   
-            <option id="" value="7">Calidad</option>  
-            <option id="" value="8">Experiencia de usuario</option>           
-        </select>
-    <button id="respuesta" class="btn btn-dark">Verificar</button>
+        <h1 id="tituloo" class="title is-1">EJERCICIO 4</h1>
+        <div id="separador2">
+            <label id="texto" class="label">Nombres:</label>
+            <div id="arreglo" class="select is-primary">
+                <select name="nombre" id="nombres">
+                    <option value="">Seleccione una opción..</option>
+                    <option value="1">Tatiana</option>
+                    <option value="2">Adriana</option>
+                    <option value="3">Yaneth</option>
+                    <option value="4">Luis</option>  
+                    <option value="5">Cristian</option>   
+                    <option value="6">Carolina</option>   
+                    <option value="7">Fernando</option>
+                </select>
+            </div>
+            <label id="texto" class="label">Apellidos:</label>
+            <div id="arreglo" class="select is-primary">
+                <select name="apellidos" id="apellidos">
+                    <option value="">Seleccione una opción..</option>
+                    <option value="1">Galindo</option>
+                    <option value="2">Forero</option>
+                    <option value="3">Buitrago</option>
+                    <option value="4">Baquero</option>
+                    <option value="5">Castillo</option> 
+                    <option value="6">Duarte</option>
+                    <option value="7">Cabrera</option>         
+                </select>
+            </div>
+            <label id="texto" class="label">Actividad:</label>
+            <div id="arreglo" class="select is-primary">
+                <select name="materia" id="materia">
+                    <option value="">Seleccione una opción..</option>
+                    <option value="1">Front-End</option>
+                    <option value="2">Seguimiento de Proyecto</option>
+                    <option value="3">Base de Datos</option>
+                    <option value="4">Cultura Fisica</option>
+                    <option value="5">Gestión Ambiental</option>
+                    <option value="6">PHP</option>   
+                    <option value="7">Metricas de Calidad</option>  
+                    <option value="8">Experiencia de usuario</option>           
+                </select>
+            </div>
+            <button id="verificar" class="button is-primary">Verificar</button>
+        </div>
     </section>
     <script src="js/Ejercicio4.js" defer></script>
 </body>

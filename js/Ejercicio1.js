@@ -39,7 +39,7 @@ var mayusculasQ = document.getElementById('mayuscula');
 mayusculasQ.addEventListener('click', function()
 {
     const texto1 = document.getElementById('palabra').value;
-    window.alert(`conversion de "${texto1}" a mayúscula es ` + texto1.toUpperCase());
+    window.alert(`"${texto1}" en mayúscula se veria asi ` + texto1.toUpperCase());
 });
 
 /*MINUSCULAS*/
@@ -48,7 +48,7 @@ var minusculasQ = document.getElementById('minusculas');
 minusculasQ.addEventListener('click', function()
 {
     const texto1 = document.getElementById('palabra').value;
-    window.alert(`conversion de "${texto1}" a minúsculas es ` + texto1.toLowerCase());
+    window.alert(`"${texto1}" en minúsculas se veria asi ` + texto1.toLowerCase());
 });
 
 /*PRIMERA LETRA*/

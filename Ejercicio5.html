@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
     <title>Ejercicio 5</title>
     <!-- BOX ICONS -->
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/Ejercicio5.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
     <div class="menu-dashboard">
@@ -28,10 +31,6 @@
         </div> -->
         <!-- MENU -->
         <div class="menu">
-            <div class="enlace">
-                <i class="bx bx-grid-alt"></i>
-                <a href="dashboard.html"><span>Dashboard</span></a>
-            </div>
 
             <div class="enlace">
                 <i class="bx bx-user"></i>
@@ -64,6 +63,54 @@
             </div>
         </div>
     </div>
-    <script src="js/dashboard.js" defer></script>
+
+    <section id="separador">
+
+    <div class="card__container">
+            <div class="card__item">
+                    <img src="http://assets.stickpng.com/thumbs/58afdaa0829958a978a4a68a.png" class="rectangulo">
+                <h3 class="card__title">Rectángulo</h3>
+            </div>
+            
+            <div class="card__item">
+                    <img src="https://i.pinimg.com/originals/39/98/08/399808c7787f2c87cfa2b217deb4245b.png" class="card__picture">
+                <h3 class="card__title">Cuadrado</h3>
+            </div>
+            <div class="card__item">
+                <img src="https://don-g.com/wp-content/uploads/2020/02/circulo-rojo-png-4.png" class="card__picture">
+                <h3 class="card__title">Círculo</h3>
+                <button id="perimetroC" class="button is-primary">Perímetro</button>
+                <button id="areaC" class="button is-primary">Área</button>
+            </div>
+
+        <!--Circulo-->
+        <div id="perimetroCirculo" class="modal">
+            <div class="contenidoModal">
+                <span class="cerrarModalC"><ion-icon name="close"></ion-icon></span>
+                <h1 id="tituloo" class="title is-1">Perimetro</h1>
+                <div class="form-group">
+                    <input id="radio" type="number" class="input is-primary" placeholder="Ingresa el radio del circulo">
+                    <button id="calcularPC" type="button" class="button is-primary diseno">Calcular</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="areaCirculo" class="modal">
+            <div class="contenidoModal">
+                <span class="cerrarModal"><ion-icon name="close"></i></span>
+                <h1 id="tituloo" class="title is-1">Area</h1>
+                <div class="form-group">
+                    <input type="text" id="radio" class="input is-primary" placeholder="Ingresa el radio del circulo">
+                    <button id="calcularAC" type="button" class="button is-primary diseno">Calcular</button>
+                </div>
+            </div>
+        </div>
+        <div class="card__item">
+                <img src="https://www.pngmart.com/files/17/Triangle-Shape-Transparent-PNG.png" class="card__picture">
+            <h3 class="card__title">Triángulo</h3>
+        </div> 
+    </div> 
+    </section>
+    <script src="js/Ejercicio5.js" defer></script>
 </body>
 </html>

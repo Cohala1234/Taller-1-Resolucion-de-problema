@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
     <title>Ejercicio 3</title>
     <!-- BOX ICONS -->
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
@@ -28,10 +29,6 @@
         </div> -->
         <!-- MENU -->
         <div class="menu">
-            <div class="enlace">
-                <i class="bx bx-grid-alt"></i>
-                <a href="dashboard.html"><span>Dashboard</span></a>
-            </div>
 
             <div class="enlace">
                 <i class="bx bx-user"></i>
@@ -64,17 +61,18 @@
             </div>
         </div>
     </div>
-    <section class="separador">
-        <h1 class="tit">Consultar triangulo</h1>
-        <label for="lado1" id="lados">Digite el primer lado:</label>
-        <input type="text" id="lado1" class="form-control">
-        <label for="lado1" id="lados">Digite el segundo lado:</label>
-        <input type="text" id="lado2" class="form-control">
-        <label for="lado1" id="lados">Digite el tercer lado:</label>
-        <input type="text" id="lado3" class="form-control">
-        <button id="trig" class="btn btn-dark">TRIANGULO..</button>
+        <section class="separador">
+            <h1 id="tituloo" class="title is-1">EJERCICIO 3</h1>
+            <div id="separador2">
+                <label id="texto" class="label">Digite el primer lado:</label>
+                <input type="text" id="lado1" class="input is-primary">
+                <label id="texto" class="label">Digite el segundo lado:</label>
+                <input type="text" id="lado2" class="input is-primary">
+                <label id="texto" class="label">Digite el tercer lado:</label>
+                <input type="text" id="lado3" class="input is-primary">
+                <button id="triangulo" class="button is-primary">El triangulo es..</button>
+            </div>
     </section>
-            
     <script src="js/Ejercicio3.js" defer></script>
 </body>
 </html>

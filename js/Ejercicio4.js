@@ -24,27 +24,49 @@ enlacesMenu.forEach(enlace => {
     })
 })
 
-const respuesta = document.getElementById('respuesta');
-respuesta.addEventListener('click', ()=>{
-      const names = document.getElementById('nombre').value;
-      const secondName = document.getElementById('apellido').value;
-      const materia = document.getElementById('actividad').value;
-      parseInt(names); parseInt(secondName); parseInt(materia)
-            if(names== 1 && secondName==2 && materia==6){
-                  alert("RESPUESTA CORRECTA!!")
-            }else if(names== 2 && secondName==4 && materia==1 || materia==7){
-                  alert("RESPUESTA CORRECTA!!")
-            }else if(names== 3 && secondName==5 && materia==2){
-                  alert("RESPUESTA CORRECTA!!")
-            }else if(names== 4 && secondName==1 && materia==8){
-                  alert("RESPUESTA CORRECTA!!")
-            }else if(names== 5 && secondName==3 && materia==3){
-                  alert("RESPUESTA CORRECTA!!")
-            }else if(names== 6 && secondName==7 && materia==6){
-                  alert("RESPUESTA CORRECTA!!")
-            }else if(names== 7 && secondName==8 && materia==4){
-                  alert("RESPUESTA CORRECTA!!")
-            }else{
-                  alert("RESPUESTA INCORRECTA¡¡")
-            }    
+var verificar = document.getElementById('verificar');
+
+verificar.addEventListener('click', function()
+{
+      var nombres = document.getElementById('nombres').value;
+      var apellidos = document.getElementById('apellidos').value;
+      var materia = document.getElementById('materia').value;
+      parseInt(nombres, apellidos, materia);
+
+      if(nombres == 1 && apellidos == 7 && materia == 1 || materia == 7)
+      {
+            window.alert("¡RESPUESTA CORRECTA!")
+      }
+      else if(nombres == 2 && apellidos == 6 && materia == 8)
+      {
+            window.alert("¡RESPUESTA CORRECTA!")
+      }
+      else if(nombres == 3 && apellidos == 5 && materia == 5)
+      {
+            window.alert("¡RESPUESTA CORRECTA!")
+      }
+      else if(nombres == 4 && apellidos == 4 && materia == 4)
+      {
+            window.alert("¡RESPUESTA CORRECTA!")
+      }
+      else if(nombres == 5 && apellidos == 3 && materia == 6)
+      {
+            window.alert("¡RESPUESTA CORRECTA!")
+      }
+      else if(nombres == 6 && apellidos == 2 && materia == 2)
+      {
+            window.alert("¡RESPUESTA CORRECTA!")
+      }
+      else if(nombres == 7 && apellidos == 1 && materia == 3)
+      {
+            window.alert("¡RESPUESTA CORRECTA!")
+      }
+      else if(nombres == 1 && apellidos == 7 && materia == 7)
+      {
+            window.alert("¡RESPUESTA INCORRECTA!")
+      }
+      else if()
+      {
+            window.alert("¡RESPUESTA INCORRECTA!")
+      }    
 })
