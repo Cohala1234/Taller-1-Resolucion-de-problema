@@ -142,8 +142,6 @@ body {
 .menu-dashboard.open .top-menu .logo span {
     display: block;
 }
-
-.menu-dashboard.open .input-search
 .menu-dashboard.open .menu .enlace {
     width: auto;
 }
@@ -218,4 +216,767 @@ body {
     margin-left: 36%;
     font-size: 4em;
     margin-top: 12%;
+}
+
+@media screen and (max-width: 410px)
+{
+    .top-menu .toggle i {
+        font-size: 138px;
+    }
+    .top-menu .logo {
+        display: none;
+    }   
+    .top-menu .toggle {
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+        margin-left: 6%;
+        margin-top: 23%;
+    }
+    .menu {
+        margin-top: 100%;
+    }
+    .menu .enlace {
+        padding: 79px 0 116px 43px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        cursor: pointer;
+        font-size: 7px;
+        transition: all .3s ease;
+    }
+    .menu .enlace i {
+        margin-right: 20px;
+        font-size: 80px;
+    }
+    .menu-dashboard {
+        max-width: 193px;
+        height: 95em;
+        background: var(--bg-menu);
+        padding: 20px;
+        transition: max-width .3s ease;
+        position: relative;
+    }
+    .separador {
+        height: 52.2em;
+        margin-left: 52.4%;
+        margin-top: -80em;
+        width: 48em;
+        position: inherit;
+    }
+    .menu .enlace {
+        padding: 79px 0 36px 39px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        cursor: pointer;
+        font-size: 7px;
+        transition: all .3s ease;
+    }
+    #tituloo {
+        margin-left: 11%;
+        font-size: 7em;
+        margin-top: 12%;
+    }
+    #texto {
+        margin-left: 9%;
+        font-size: 4em;
+        margin-top: 5%;
+    }
+    #palabra {
+        width: 81%;
+        margin-left: 11%;
+        padding: 4%;
+        position: inherit;
+    }
+    .input, .textarea 
+    {
+        font-size: 3rem;
+    }
+
+    #longitud {
+        margin: 0% auto;
+        margin-top: 1%;
+        width: 9em;
+        font-size: 2.5em;
+        position: inherit;
+    }
+    #mayuscula {
+        margin: 0% auto;
+        margin-top: 1%;
+        width: 9em;
+        font-size: 2.5em;
+        position: inherit;
+    }
+    #minusculas {
+        margin: 0% auto;
+        margin-top: 1%;
+        width: 9em;
+        font-size: 2.5em;
+        position: inherit;
+    }
+    #primerCaracter {
+        margin: 0% auto;
+        margin-top: 1%;
+        width: 9em;
+        font-size: 2.5em;
+        position: inherit;
+    }
+    .menu-dashboard.open {
+        max-width: 416px;
+        position: relative;
+    }
+    .menu-dashboard.open .top-menu .logo 
+    {
+        display: block;
+    }
+    .menu-dashboard.open .top-menu .toggle {
+        width: 119px;
+        height: 20px;
+        cursor: pointer;
+        margin-left: -17%;
+        margin-top: -1%;
+    }
+    .menu-dashboard.open .menu .enlace {
+        padding: 58px;
+        margin-left: -11%;
+    }
+    .menu-dashboard.open .menu {
+        margin-top: 18%;
+    }
+    .menu-dashboard.open .menu .enlace a {
+        text-decoration: none;
+        color: var(--blanco);
+        font-size: 5.6em;
+    }
+}
+@media screen and (min-width: 411px) and (max-width: 490px)
+{
+    .top-menu .toggle i {
+        font-size: 138px;
+    }
+    .top-menu .logo {
+        display: none;
+    }   
+    .top-menu .toggle {
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+        margin-left: 6%;
+        margin-top: 23%;
+    }
+    .menu {
+        margin-top: 58%;
+    }
+    .menu .enlace {
+        padding: 79px 0 116px 43px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        cursor: pointer;
+        font-size: 7px;
+        transition: all .3s ease;
+    }
+    .menu .enlace i {
+        margin-right: 20px;
+        font-size: 80px;
+    }
+    .menu-dashboard {
+        max-width: 193px;
+        height: 94em;
+        background: var(--bg-menu);
+        padding: 20px;
+        transition: max-width .3s ease;
+        position: relative;
+    }
+    .separador {
+        height: 52.2em;
+        margin-left: 52.4%;
+        margin-top: -80em;
+        width: 48em;
+        position: inherit;
+    }
+    .menu .enlace {
+        padding: 79px 0 30px 39px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        cursor: pointer;
+        font-size: 7px;
+        transition: all .3s ease;
+    }
+    #tituloo {
+        margin-left: 11%;
+        font-size: 7em;
+        margin-top: 12%;
+    }
+    #texto {
+        margin-left: 9%;
+        font-size: 4em;
+        margin-top: 5%;
+    }
+    #palabra {
+        width: 81%;
+        margin-left: 11%;
+        padding: 4%;
+        position: inherit;
+    }
+    .input, .textarea 
+    {
+        font-size: 3rem;
+    }
+
+    #longitud {
+        margin: 0% auto;
+        margin-top: 1%;
+        width: 9em;
+        font-size: 2.5em;
+        position: inherit;
+    }
+    #mayuscula {
+        margin: 0% auto;
+        margin-top: 1%;
+        width: 9em;
+        font-size: 2.5em;
+        position: inherit;
+    }
+    #minusculas {
+        margin: 0% auto;
+        margin-top: 1%;
+        width: 9em;
+        font-size: 2.5em;
+        position: inherit;
+    }
+    #primerCaracter {
+        margin: 0% auto;
+        margin-top: 1%;
+        width: 9em;
+        font-size: 2.5em;
+        position: inherit;
+    }
+    .menu-dashboard.open {
+        max-width: 416px;
+        position: relative;
+    }
+    .menu-dashboard.open .top-menu .logo 
+    {
+        display: block;
+    }
+    .menu-dashboard.open .top-menu .toggle {
+        width: 119px;
+        height: 20px;
+        cursor: pointer;
+        margin-left: -17%;
+        margin-top: -1%;
+    }
+    .menu-dashboard.open .menu .enlace {
+        padding: 58px;
+        margin-left: -11%;
+    }
+    .menu-dashboard.open .menu {
+        margin-top: 18%;
+    }
+    .menu-dashboard.open .menu .enlace a {
+        text-decoration: none;
+        color: var(--blanco);
+        font-size: 5.6em;
+    }
+}
+@media screen and (min-width: 491px) and (max-width: 700px)
+{
+    .top-menu .toggle i {
+        font-size: 138px;
+    }
+    .top-menu .logo {
+        display: none;
+    }   
+    .top-menu .toggle {
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+        margin-left: 6%;
+        margin-top: 23%;
+    }
+    .menu {
+        margin-top: 58%;
+    }
+    .menu .enlace {
+        padding: 79px 0 10px 39px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        cursor: pointer;
+        font-size: 7px;
+        transition: all .3s ease;
+    }
+    .menu .enlace i {
+        margin-right: 20px;
+        font-size: 65px;
+    }
+    .menu-dashboard {
+        max-width: 193px;
+        height: 79.99em;
+        background: var(--bg-menu);
+        padding: 20px;
+        transition: max-width .3s ease;
+        position: relative;
+    }
+    .separador {
+        height: 52.2em;
+        margin-left: 42.4%;
+        margin-top: -75em;
+        width: 48em;
+        position: inherit;
+    }
+    .menu .enlace {
+        padding: 85px 0 14px 39px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        cursor: pointer;
+        font-size: 7px;
+        transition: all .3s ease;
+    }
+    #tituloo {
+        margin-left: 11%;
+        font-size: 7em;
+        margin-top: 12%;
+    }
+    #texto {
+        margin-left: 9%;
+        font-size: 4em;
+        margin-top: 5%;
+    }
+    #palabra {
+        width: 81%;
+        margin-left: 11%;
+        padding: 4%;
+        position: inherit;
+    }
+    .input, .textarea 
+    {
+        font-size: 3rem;
+    }
+    #longitud {
+        margin: 0% auto;
+        margin-top: 1%;
+        width: 9em;
+        font-size: 2.5em;
+        position: inherit;
+    }
+    #mayuscula {
+        margin: 0% auto;
+        margin-top: 1%;
+        width: 9em;
+        font-size: 2.5em;
+        position: inherit;
+    }
+    #minusculas {
+        margin: 0% auto;
+        margin-top: 1%;
+        width: 9em;
+        font-size: 2.5em;
+        position: inherit;
+    }
+    #primerCaracter {
+        margin: 0% auto;
+        margin-top: 1%;
+        width: 9em;
+        font-size: 2.5em;
+        position: inherit;
+    }
+    .menu-dashboard.open {
+        max-width: 498px;
+        position: relative;
+        height: 88.9em;
+    }
+    .menu-dashboard.open .top-menu .logo 
+    {
+        display: block;
+    }
+    .menu-dashboard.open .top-menu .toggle {
+        width: 119px;
+        height: 20px;
+        cursor: pointer;
+        margin-left: -17%;
+        margin-top: -1%;
+    }
+    .menu-dashboard.open .menu .enlace {
+        padding: 50px;
+        margin-left: -11%;
+    }
+    .menu-dashboard.open .menu {
+        margin-top: 18%;
+    }
+    .menu-dashboard.open .menu .enlace a {
+        text-decoration: none;
+        color: var(--blanco);
+        font-size: 7.6em;
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1000px)
+{
+    .top-menu .toggle i {
+        font-size: 96px;
+    }
+    .top-menu .logo {
+        display: none;
+    }   
+    .top-menu .toggle {
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+        margin-left: 19%;
+        margin-top: 23%;
+    }
+    .menu {
+        margin-top: 43%;
+    }
+    .menu .enlace i {
+        margin-right: 20px;
+        font-size: 49px;
+    }
+    .menu-dashboard {
+        max-width: 193px;
+        height: 58.99em;
+        background: var(--bg-menu);
+        padding: 20px;
+        transition: max-width .3s ease;
+        position: relative;
+    }
+    .separador {
+        height: 36.2em;
+        margin-left: 36.4%;
+        margin-top: -56em;
+        width: 48em;
+        position: fixed;
+        position: inherit;
+    }
+    #tituloo {
+        margin-left: 11%;
+        font-size: 6em;
+        margin-top: 12%;
+    }
+    #texto {
+        margin-left: 3%;
+        font-size: 3em;
+        margin-top: 5%;
+    }
+    #palabra {
+        width: 81%;
+        margin-left: 11%;
+        padding: 4%;
+        position: inherit;
+    }
+    .input, .textarea {
+        font-size: 2rem;
+    }
+    #longitud {
+        margin: 0% auto;
+        margin-top: 1%;
+        width: 9em;
+        font-size: 2em;
+        position: inherit;
+    }
+    #mayuscula {
+        margin: 0% auto;
+        margin-top: 1%;
+        width: 9em;
+        font-size: 2em;
+        position: inherit;
+    }
+    #minusculas {
+        margin: 0% auto;
+        margin-top: 1%;
+        width: 9em;
+        font-size: 2em;
+        position: inherit;
+    }
+    #primerCaracter {
+        margin: 0% auto;
+        margin-top: 1%;
+        width: 9em;
+        font-size: 2em;
+        position: inherit;
+    }
+    .menu-dashboard.open {
+        max-width: 498px;
+        position: relative;
+        height: 79em;
+    }
+    .menu-dashboard.open .top-menu .logo 
+    {
+        display: block;
+    }
+    .menu-dashboard.open .top-menu .toggle {
+        width: 119px;
+        height: 20px;
+        cursor: pointer;
+        margin-left: -17%;
+        margin-top: -1%;
+    }
+    .menu-dashboard.open .menu .enlace {
+        padding: 44px;
+        margin-left: -2%;
+    }
+    .menu-dashboard.open .menu {
+        margin-top: 14%;
+    }
+    .menu-dashboard.open .menu .enlace a {
+        text-decoration: none;
+        color: var(--blanco);
+        font-size: 6.6em;
+    }
+    .menu .enlace {
+        padding: 54px 0 4px 48px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        cursor: pointer;
+        font-size: 7px;
+        transition: all .3s ease;
+    }
+    .menu-dashboard.open section
+    {
+        height: 36.2em;
+        margin-left: 36.4%;
+        margin-top: -65em;
+        width: 48em;
+        position: inherit;
+    }
+}
+@media screen and (min-width: 1001px) and (max-width: 1407px)
+{
+    .menu {
+        margin-top: 46%;
+    }
+    .menu .enlace {
+        width: 100%;
+        padding: 7px 0 2px 38px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: all .3s ease;
+    }
+    .separador {
+        width: 81em;
+        height: 25.2em;
+        margin-left: 10.4%;
+        margin-top: -53.2%;
+    }
+    .menu-dashboard {
+        max-width: 150px;
+        background: var(--bg-menu);
+        padding: 20px;
+        transition: max-width .3s ease;
+        height: 40.6em;
+    }
+}
+@media screen and (min-width: 1408px)
+{
+
+.menu{
+    margin-top: 20%;
+}
+.menu-dashboard {
+    max-width: 150px;
+    height: 100vh;
+    background: var(--bg-menu);
+    padding: 20px;
+    transition: max-width .3s ease;
+}
+
+.top-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-menu .logo {
+    display: flex;
+    align-items: center;
+}
+
+.top-menu .logo img {
+    width: 80%;
+    transition: width .3s ease;
+}
+
+.top-menu .logo span {
+    font-size: 20px;
+    margin-left: 20px;
+    display: none;
+}
+
+.top-menu .toggle {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.top-menu .toggle i {
+    font-size: 35px;
+}
+
+/* INPUT BOX 
+
+.input-search {
+    width: 100%;
+    margin: 50px 0;
+    background-color: var(--azul-opacidad);
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.input-search i {
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.input-search .input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    height: 30px;
+    color: var(--blanco);
+    font-size: 22px;
+    display: none;
+}
+*/
+
+/* ENLACES MENU */
+
+.menu .enlace {
+    width: 100%;
+    padding: 7px 0 20px 38px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all .3s ease;
+}
+
+.menu .enlace:hover {
+    background: var(--azul-opacidad);
+}
+
+.menu .enlace i {
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+.menu .enlace a {
+    
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+.menu .enlace span {
+
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+.menu-dashboard.open {
+    max-width: 300px;
+}
+
+.menu-dashboard.open .top-menu .logo span {
+    display: block;
+}
+.menu-dashboard.open .menu .enlace {
+    width: auto;
+}
+
+.menu-dashboard.open .input-search .input {
+    display: block;
+}
+
+.menu-dashboard.open .menu .enlace {
+    padding: 20px;
+}
+
+.menu-dashboard.open .menu .enlace span {
+    opacity: 1;
+}
+
+/*SEPARADOR*/
+.separador
+{
+    width: 81em;
+    height: 41.2em;
+    margin-left: 10.4%;
+    margin-top: -57.2%;
+}
+#texto
+{
+    margin-left: 25%;
+    font-size: 2em;
+    margin-top: 5%;
+}
+#palabra
+{
+    width: 44%;
+    margin-left: 28%;
+}
+.cajas
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+}
+#longitud
+{
+    margin: 0% auto;
+    margin-top: 1%;
+    padding: 2%;
+    width: 10em;
+}
+#mayuscula
+{
+    margin: 0% auto;
+    margin-top: 1%;
+    padding: 2%;
+    width: 10em;
+}
+#minusculas
+{
+    margin: 0% auto;
+    margin-top: 1%;
+    padding: 2%;
+    width: 10em;
+}
+#primerCaracter
+{
+    margin: 0% auto;
+    margin-top: 1%;
+    padding: 2%;
+    width: 10em;
+}
+#tituloo
+{
+    margin-left: 36%;
+    font-size: 4em;
+    margin-top: 12%;
+}
+
 }
