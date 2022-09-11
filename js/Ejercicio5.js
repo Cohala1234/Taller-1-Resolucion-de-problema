@@ -23,243 +23,195 @@ enlacesMenu.forEach(enlace => {
         iconoMenu.classList.replace("bx-menu", "bx-x")
     })
 })
+//CIRCULO
+    //PERIMETRO
+    var circuloPerimetro = document.getElementById("circuloPerimetro");
+    var perimetroCirculo = document.getElementById("perimetroCirculo");
+    var cerrarCirculo = document.querySelector(".cerrarCirculo");
 
-//Circulo
-    //Perimetro
-    let perimetroC=document.getElementById("perimetroC");
-    let perimetroCirculo=document.getElementById("perimetroCirculo");
-    let cerrarModalC=document.querySelector(".cerrarModalC");
+    circuloPerimetro.addEventListener("click", function()
+    {
+        perimetroCirculo.style.display = "block";
+    });
+    cerrarCirculo.addEventListener("click", function()
+    {
+        perimetroCirculo.style.display = "none"; 
+    });
 
+    var calcularCirculo = document.getElementById("calcularCirculo");
 
-    perimetroC.addEventListener("click",()=>{
-        perimetroCirculo.style.display="block";
-    })
-
-    cerrarModalC.addEventListener("click",()=>{
-        perimetroCirculo.style.display="none"; 
-    })
-
-    window.addEventListener("click",(e)=>{
-        if(e.target==perimetroC){
-            perimetroC.style.display="flex"; 
-        }
-    })
-
-    const calcularPC=document.getElementById("calcularPC");
-
-    calcularPC.addEventListener("click",()=>{
-        const radio=document.getElementById("radio").value;
+    calcularCirculo.addEventListener("click", function()
+    {
+        var radio = document.getElementById("radio").value;
         parseInt(radio);
-        let resultado = radio * 3.1416 * 2;
-        alert(`El perímetro del circulo es ${resultado.toFixed(2)}`);
+        var resultado = radio * 3.1416 * 2;
+        window.alert(`El perímetro del circulo es ${resultado.toFixed(2)}`);
+    });
+    //AREA
+    var circuloArea = document.getElementById("circuloArea");
+    var areaCirculo = document.getElementById("areaCirculo");
+    var cerrarCirculo2 = document.querySelector(".cerrarCirculo2");
+
+    circuloArea.addEventListener("click", function()
+    {
+        areaCirculo.style.display = "block";
+    });
+    cerrarCirculo2.addEventListener("click", function()
+    {
+        areaCirculo.style.display = "none"; 
+    });
+
+    var calcularCirculo2 = document.getElementById("calcularCirculo2");
+
+    calcularCirculo2.addEventListener("click", function()
+    {
+        var radio2 = document.getElementById("radio2").value;
+        parseInt(radio2);
+        var resultado = 3.1416 * (radio2 *  radio2);
+        window.alert(`El área del circulo es ${resultado.toFixed(2)}`);
+    });
+//TRIANGULO
+    //PERIMETRO
+    var trianguloPerimetro = document.getElementById("trianguloPerimetro");
+    var perimetroTriangulo = document.getElementById("perimetroTriangulo");
+    var cerrarTriangulo = document.querySelector(".cerrarTriangulo");
+
+    trianguloPerimetro.addEventListener("click", function()
+    {
+        perimetroTriangulo.style.display = "block";
+    });
+    cerrarTriangulo.addEventListener("click", function()
+    {
+        perimetroTriangulo.style.display = "none"; 
+    });
+
+    var calcularTriangulo = document.getElementById("calcularTriangulo");
+
+    calcularTriangulo.addEventListener("click", function()
+    {
+        var lado1=document.getElementById("lado1").value;
+        var lado2=document.getElementById("lado2").value;
+        var lado3=document.getElementById("lado3").value;
+        var resultado = (parseInt(lado1) + parseInt(lado2) + parseInt(lado3));
+        window.alert(`El perímetro del triangulo es ${resultado}`);
+    });
+    //AREA
+    var trianguloArea = document.getElementById("trianguloArea");
+    var areaTriangulo = document.getElementById("areaTriangulo");
+    var cerrarTriangulo2 = document.querySelector(".cerrarTriangulo2");
+
+    trianguloArea.addEventListener("click", function()
+    {
+        areaTriangulo.style.display = "block";
+    });
+    cerrarTriangulo2.addEventListener("click", function()
+    {
+        areaTriangulo.style.display = "none"; 
+    });
+
+    var calcularTriangulo2 = document.getElementById("calcularTriangulo2");
+
+    calcularTriangulo2.addEventListener("click", function()
+    {
+        var baseTriangulo = document.getElementById("baseTriangulo").value;
+        var alturaTriangulo = document.getElementById("alturaTriangulo").value;
+        parseInt(baseTriangulo, alturaTriangulo);
+        var resultado = (baseTriangulo * alturaTriangulo)/2;
+        window.alert(`El perímetro del triangulo es ${resultado}`);
     })
+//CUADRADO
+    //PERIMETRO
+    var cuadradoPerimetro=document.getElementById("cuadradoPerimetro");
+    var perimetroCuadrado=document.getElementById("perimetroCuadrado");
+    var cerrarCuadrado=document.querySelector(".cerrarCuadrado");
 
-    //Area
-    let areaC=document.getElementById("areaC");
-    let areaCirculo=document.getElementById("areaCirculo");
-    let cerrarModal=document.querySelector(".cerrarModal");
+    cuadradoPerimetro.addEventListener("click", function()
+    {
+        perimetroCuadrado.style.display = "block";
+    });
+    cerrarCuadrado.addEventListener("click", function()
+    {
+        perimetroCuadrado.style.display = "none"; 
+    });
 
-    areaC.addEventListener("click",()=>{
-        areaCirculo.style.display="block";
+    var calcularCuadrado = document.getElementById("calcularCuadrado");
+
+    calcularCuadrado.addEventListener("click", function()
+    {
+        var ladoCuadrado = document.getElementById("ladoCuadrado").value;
+        parseInt(ladoCuadrado);
+        var resultado = ladoCuadrado * 4;
+        window.alert(`El perímetro del cuadrado es ${resultado}`);
+    });
+    //AREA
+    var cuadradoArea = document.getElementById("cuadradoArea");
+    var areaCuadrado = document.getElementById("areaCuadrado");
+    var cerrarCuadrado2 = document.querySelector(".cerrarCuadrado2");
+
+    cuadradoArea.addEventListener("click", function()
+    {
+        areaCuadrado.style.display = "block";
+    });
+    cerrarCuadrado2.addEventListener("click", function()
+    {
+        areaCuadrado.style.display = "none"; 
+    });
+
+    var calcularCuadrado2 = document.getElementById("calcularCuadrado2");
+
+    calcularCuadrado2.addEventListener("click", function()
+    {
+        var ladoCuadrado2 = document.getElementById("ladoCuadrado2").value;
+        parseInt(ladoCuadrado2);
+        var resultado = ladoCuadrado2 * ladoCuadrado2;
+        window.alert(`El área del triangulo es ${resultado}`);
     })
+//RECTANGULO
+    //PERIMETRO
+    var rectanguloPerimetro = document.getElementById("rectanguloPerimetro");
+    var perimetroRectangulo = document.getElementById("perimetroRectangulo");
+    var cerrarRectangulo = document.querySelector(".cerrarRectangulo");
 
-    cerrarModal.addEventListener("click",()=>{
-        areaCirculo.style.display="none"; 
-    })
+    rectanguloPerimetro.addEventListener("click", function()
+    {
+        perimetroRectangulo.style.display = "block";
+    });
+    cerrarRectangulo.addEventListener("click", function()
+    {
+        perimetroRectangulo.style.display = "none"; 
+    });
 
-    window.addEventListener("click",(e)=>{
-        if(e.target==areaC){
-            areaC.style.display="flex"; 
-        }
-    })
+    var calcularRectangulo = document.getElementById("calcularRectangulo");
 
-    const calcularAC=document.getElementById("calcularAC");
+    calcularRectangulo.addEventListener("click", function()
+    {
+        var baseRectangulo = document.getElementById("baseRectangulo").value;
+        var alturaRectangulo = document.getElementById("alturaRectangulo").value;
+        parseInt(baseRectangulo, alturaRectangulo);
+        var resultado = 2 * (parseInt(baseRectangulo) + parseInt(alturaRectangulo));
+        window.alert(`El perímetro del rectangulo es ${resultado}`);
+    });
+    //AREA
+    var rectanguloArea = document.getElementById("rectanguloArea");
+    var areaRectangulo = document.getElementById("areaRectangulo");
+    var cerrarRectangulo2 = document.querySelector(".cerrarRectangulo2");
 
-    calcularAC.addEventListener("click",()=>{
-        const radio=document.getElementById("radio").value;
-        parseInt(radio);
-        let resultado = 3.1416 * (radio *  radio);
-        alert(`El área del circulo es ${resultado.toFixed(2)}`);
-    })
+    rectanguloArea.addEventListener("click", function()
+    {
+        areaRectangulo.style.display = "block";
+    });
+    cerrarRectangulo2.addEventListener("click", function()
+    {
+        areaRectangulo.style.display = "none"; 
+    });
 
-//Triangulo
-    //perimetro
-    let perimetroT=document.getElementById("perimetroT");
-    let perimetroTriangulo=document.getElementById("perimetroTriangulo");
-    let cerrarModalT=document.querySelector(".cerrarModalT");
+    var calcularRectangulo2=document.getElementById("calcularRectangulo2");
 
-    perimetroT.addEventListener("click",()=>{
-        perimetroTriangulo.style.display="block";
-    })
-
-    cerrarModalT.addEventListener("click",()=>{
-        perimetroTriangulo.style.display="none"; 
-    })
-
-    window.addEventListener("click",(e)=>{
-        if(e.target==perimetroT){
-            perimetroT.style.display="flex"; 
-        }
-    })
-
-
-    const calcularPT=document.getElementById("calcularPT");
-
-    calcularPT.addEventListener("click",()=>{
-        let lado1=document.getElementById("lado1").value;
-        let lado2=document.getElementById("lado2").value;
-        let lado3=document.getElementById("lado3").value;
-        parseInt(lado1,lado2,lado3);
-        let resultado = (parseInt(lado1) + parseInt(lado2) + parseInt(lado3));
-        alert(`El perímetro del triangulo es ${resultado}`);
-    })
-
-
-    //Area
-    let areaT=document.getElementById("areaT");
-    let areaTriangulo=document.getElementById("areaTriangulo");
-    let cerrarModalT2=document.querySelector(".cerrarModalT2");
-
-    areaT.addEventListener("click",()=>{
-        areaTriangulo.style.display="block";
-    })
-
-    cerrarModalT2.addEventListener("click",()=>{
-        areaTriangulo.style.display="none"; 
-    })
-
-    window.addEventListener("click",(e)=>{
-        if(e.target==areaT){
-            areaT.style.display="flex"; 
-        }
-    })
-
-
-    const calcularAT=document.getElementById("calcularAT");
-
-    calcularAT.addEventListener("click",()=>{
-        let baseT=document.getElementById("baseT").value;
-        let alturaT=document.getElementById("alturaT").value;
-        parseInt(baseT,alturaT);
-        let resultado = (baseT * alturaT)/2;
-        alert(`El perímetro del triangulo es ${resultado}`);
-    })
-
-//Cuadrado
-    //perimetro
-    let perimetroCu=document.getElementById("perimetroCu");
-    let perimetroCuadrado=document.getElementById("perimetroCuadrado");
-    let cerrarModalCu=document.querySelector(".cerrarModalCu");
-
-    perimetroCu.addEventListener("click",()=>{
-        perimetroCuadrado.style.display="block";
-    })
-
-    cerrarModalCu.addEventListener("click",()=>{
-        perimetroCuadrado.style.display="none"; 
-    })
-
-    window.addEventListener("click",(e)=>{
-        if(e.target==perimetroCu){
-            perimetroCu.style.display="flex"; 
-        }
-    })
-
-    const calcularPCu=document.getElementById("calcularPCu");
-
-    calcularPCu.addEventListener("click",()=>{
-        let ladoC=document.getElementById("ladoC").value;
-        parseInt(ladoC);
-        let resultado = ladoC * 4;
-        alert(`El perímetro del cuadrado es ${resultado}`);
-    })
-
-
-    //Area
-    let areaCu=document.getElementById("areaCu");
-    let areaCuadrado=document.getElementById("areaCuadrado");
-    let cerrarModalCu2=document.querySelector(".cerrarModalCu2");
-
-    areaCu.addEventListener("click",()=>{
-        areaCuadrado.style.display="block";
-    })
-
-    cerrarModalCu2.addEventListener("click",()=>{
-        areaCuadrado.style.display="none"; 
-    })
-
-    window.addEventListener("click",(e)=>{
-        if(e.target==areaCu){
-            areaCu.style.display="flex"; 
-        }
-    })
-
-    const calcularACu=document.getElementById("calcularACu");
-
-    calcularACu.addEventListener("click",()=>{
-        let ladoCA=document.getElementById("ladoCA").value;
-        parseInt(ladoCA);
-        let resultado = ladoCA * ladoCA;
-        alert(`El área del triangulo es ${resultado}`);
-    })
-
-//Rectangulo
-    //perimetro
-    let perimetroR=document.getElementById("perimetroR");
-    let perimetroRectangulo=document.getElementById("perimetroRectangulo");
-    let cerrarModalR=document.querySelector(".cerrarModalR");
-
-    perimetroR.addEventListener("click",()=>{
-        perimetroRectangulo.style.display="block";
-    })
-
-    cerrarModalR.addEventListener("click",()=>{
-        perimetroRectangulo.style.display="none"; 
-    })
-
-    window.addEventListener("click",(e)=>{
-        if(e.target==perimetroR){
-            perimetroR.style.display="flex"; 
-        }
-    })
-
-    const calcularPR=document.getElementById("calcularPR");
-
-    calcularPR.addEventListener("click",()=>{
-        let baseR=document.getElementById("baseR").value;
-        let alturaR=document.getElementById("alturaR").value;
-        parseInt(baseR,alturaR);
-        let resultado = 2 *(parseInt(baseR) + parseInt(alturaR));
-        alert(`El perímetro del rectangulo es ${resultado}`);
-    })
-
-
-
-    //Area
-    let areaR=document.getElementById("areaR");
-    let areaRectangulo=document.getElementById("areaRectangulo");
-    let cerrarModalR2=document.querySelector(".cerrarModalR2");
-
-    areaR.addEventListener("click",()=>{
-        areaRectangulo.style.display="block";
-    })
-
-    cerrarModalR2.addEventListener("click",()=>{
-        areaRectangulo.style.display="none"; 
-    })
-
-    window.addEventListener("click",(e)=>{
-        if(e.target==areaR){
-            areaR.style.display="flex"; 
-        }
-    })
-
-    const calcularAR=document.getElementById("calcularAR");
-
-    calcularAR.addEventListener("click",()=>{
-        let baseAR=document.getElementById("baseAR").value;
-        let alturaAR=document.getElementById("alturaAR").value;
-        parseInt(baseAR,alturaAR);
-        let resultado = baseAR * alturaAR;
-        alert(`El perímetro del triangulo es ${resultado}`);
-    })
+    calcularRectangulo2.addEventListener("click", function()
+    {
+        var baseRectangulo2 = document.getElementById("baseRectangulo2").value;
+        var alturaRectangulo2 = document.getElementById("alturaRectangulo2").value;
+        parseInt(baseRectangulo2, alturaRectangulo2);
+        var resultado = baseRectangulo2 * alturaRectangulo2;
+        window.alert(`El perímetro del triangulo es ${resultado}`);
+    });
