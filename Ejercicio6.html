@@ -8,7 +8,7 @@
     <!-- BOX ICONS -->
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/Ejercicio6.css">
 </head>
 <body>
     <div class="menu-dashboard">
@@ -60,6 +60,94 @@
             </div>
         </div>
     </div>
-    <script src="js/dashboard.js" defer></script>
+    
+    <div class="formulario" id="formulario">
+        <form id="Jvalidaciones" action="validacion">
+            <!--Grupo Tipo de Documento-->
+            <div class="formulario__grupo" id="grupo__tipoDocumento">
+                <label for="documento" class="formulario__label">Numero de Documento</label>
+                <select name="documento" id="documento" class="form-select" required>
+                        <option value="0">Seleccione una opcion..</option>
+                        <option value="1">Cédula</option>
+                        <option value="2">Tarjeta identidad</option>
+                        <option value="3">Otro</option>
+                </select>
+                <p class="formulario__select-error">Por favor seleccione una opcion.</p>
+            </div>
+            <!--Grupo Numero de Documento-->
+            <div class="formulario__grupo" id="grupo__documento">
+                <label for="documento" class="formulario__label">Numero de Documento</label>
+                <div class="formulario__grupo-input">
+                    <input class="documento" id="documento" type="text" placeholder="Documento" minlength="8" maxlength="11">
+                </div>
+            </div>
+            <!--Grupo Nombre-->
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Nombre</label>
+                <div class="formulario__grupo-input">
+                    <input class="nombre" id="nombre" type="text" placeholder="Nombre">
+                </div>
+                <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+            </div>
+            <!--Grupo Apellido-->
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="apellido" class="formulario__label">Apellido:</label>
+                <div class="formulario__grupo-input">
+                    <input class="apellido" id="apellido" type="text" placeholder="Apellido">
+                </div>
+                <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+            <div>
+            <!--Grupo Fecha de Nacimiento-->    
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="fecha" class="formulario__label">Fecha de nacimiento:</label>
+                <div class="formulario__grupo-input">
+                    <input class="fecha" id="fecha" type="text" placeholder="Fecha">
+                </div>
+                <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+            <div>
+            <!--Grupo Correo--> 
+            <div class="formulario__grupo" id="grupo__correo">
+                <label for="correo" class="formulario__label">Correo:</label>
+                <div class="formulario__grupo-input">
+                    <input class="correo" id="correo" type="text" placeholder="Correo">
+                </div>
+                <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+            <div>
+            <!--Grupo Contraseña-->
+            <div class="formulario__grupo" id="grupo__password">
+                <label for="password" class="formulario__label">Contraseña:</label>
+                <div class="formulario__grupo-input">
+                    <input class="password" id="password" type="password" >
+                </div>
+                <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+            <div>
+            <!--Grupo Contraseña-->
+            <div class="formulario__grupo" id="grupo__password2">
+                <label for="password2" class="formulario__label">Confirmar Contraseña:</label>
+                <div class="formulario__grupo-input">
+                    <input class="password2" id="password2" type="password">
+                </div> 
+                <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p> 
+            </div>   
+            <!-- Grupo: Terminos y Condiciones -->
+			<div class="formulario__grupo" id="grupo__terminos">
+				<label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					Acepto los Terminos y Condiciones
+				</label>
+			</div>
+
+			<div class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+			</div>
+
+			<div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn">Enviar</button>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+			</div>
+        </form>
+    </div>
+    <script src="js/Ejercicio6.js" defer></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </body>
 </html>

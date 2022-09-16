@@ -255,7 +255,6 @@ body {
         height: 37.2em;
         margin-left: 7%;
         margin-top: -224.2%;
-        background-color: red;
     }
     .menu-dashboard.open {
         max-width: 500em;
@@ -282,5 +281,108 @@ body {
     color: var(--blanco);
     font-size: 2em;
     }
-    
 }
+@media screen and (min-width:411px) and (max-width: 510px)
+{
+    .menu-dashboard {
+        max-width: 150px;
+        height: 122.7em;
+        background: var(--bg-menu);
+        padding: 20px;
+        transition: max-width .3s ease;
+    }
+    .separador {
+        width: 81em;
+        height: 37.2em;
+        margin-left: 10.4%;
+        margin-top: -345.2%;
+    }
+    .menu-dashboard {
+        max-width: 150px;
+        height: 122.7em;
+        background: var(--bg-menu);
+        padding: 20px;
+        transition: max-width .3s ease;
+        position: relative;
+    }
+    .top-menu .logo {
+        /* display: flex; */
+        /* align-items: center; */
+        display: none;
+    }
+    .top-menu .toggle {
+        width: 30px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        margin-left: 10%;
+        margin-top: 10%;
+    }
+    .top-menu .toggle i {
+        font-size: 80px;
+    }
+    .menu .enlace i {
+        margin-right: 20px;
+        font-size: 73px;
+    }
+    .menu .enlace {
+        width: 100%;
+        padding: 64px 0 101px 16px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: all .3s ease;
+    }
+    .menu {
+        margin-top: 65%;
+    }
+    #tituloo {
+        margin-left: 26%;
+        font-size: 7em;
+        margin-top: 5%;
+    }
+    #texto {
+        margin-left: -7%;
+        font-size: 4em;
+        margin-top: 8%;
+        width: 134%;
+    }
+    .input.is-primary, .textarea.is-primary {
+        border-color: #00d1b2;
+        height: 58px;
+        position: static;
+    }
+    #triangulo {
+        margin-top: 5%;
+        margin-left: 17%;
+        font-size: 3em;
+        position: static;
+    }
+    .menu-dashboard.open {
+        max-width: 500em;
+    }
+    .menu-dashboard.open .top-menu .logo {
+        display: block;
+    }
+    .menu-dashboard.open .top-menu .toggle i {
+        font-size: 98px;
+        margin-left: -232%;
+        margin-top: -156%;
+    }
+    .menu .enlace a {
+        text-decoration: none;
+        color: var(--blanco);
+        font-size: 2em;
+    }
+    .menu-dashboard.open .menu .enlace {
+        padding: 56px;
+    }
+    .menu-dashboard.open .menu {
+        margin-top: 62%;
+    }
+} 
