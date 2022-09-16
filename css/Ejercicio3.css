@@ -193,16 +193,94 @@ body {
 
 @media screen and (max-width: 410px) 
 {
+    .top-menu .logo {
+        display: none;
+    }
+    #tituloo {
+        margin-left: 31%;
+        font-size: 4em;
+        margin-top: 5%;
+    }
+    #texto {
+        margin-left: -7%;
+        font-size: 2em;
+        margin-top: 8%;
+        width: 116%;
+    }
+    #separador2 {
+        width: 44%;
+        /* margin: 0 auto; */
+        margin-left: 15em;
+    }
+    .top-menu .toggle {
+        width: 30px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        margin-left: 19%;
+    }
+    .menu .enlace i {
+        margin-right: 20px;
+        font-size: 42px;
+    }
+    .top-menu .toggle i {
+        font-size: 63px;
+    }
+    .menu {
+        margin-top: 62%;
+    }
+    .menu .enlace {
+        width: 100%;
+        padding: 11px 0 17px 32px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: all .3s ease;
+    }
     .menu-dashboard {
         max-width: 150px;
-        height: 78.3em;
+        height: 71em;
         background: var(--bg-menu);
         padding: 20px;
         transition: max-width .3s ease;
+        position: relative;
     }
-    .top-menu .logo {
-        /* display: flex; */
-        /* align-items: center; */
-        display: none;
+    .separador {
+        width: 44em;
+        height: 37.2em;
+        margin-left: 7%;
+        margin-top: -224.2%;
+        background-color: red;
     }
+    .menu-dashboard.open {
+        max-width: 500em;
+    }
+    .menu-dashboard.open .top-menu .logo {
+        display: block;
+    }
+    .menu-dashboard.open .top-menu .toggle i {
+        font-size: 67px;
+        margin-left: -1em;
+    }
+    .input.is-primary, .textarea.is-primary {
+        border-color: #00d1b2;
+        position: static;
+    }
+    #triangulo {
+        margin-top: 5%;
+        margin-left: 9%;
+        font-size: 2em;
+        position: static;
+    }
+    .menu .enlace a {
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 2em;
+    }
+    
 }
