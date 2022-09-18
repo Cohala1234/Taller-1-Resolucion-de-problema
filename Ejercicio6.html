@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
     <title>Ejercicio 6</title>
     <!-- BOX ICONS -->
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
@@ -60,104 +61,93 @@
             </div>
         </div>
     </div>
-    
-    <div id="frm-container" class="frm-container">
-        <form id="frm-usuario" action="" method="post">
-            <!--Grupo Tipo de Documento-->
-            <div class="form-group" id="g-tipodoc">
-                <label for="tipodoc" class="tipodoc">Tipo de Documento</label>
-                <div class="form-group-input">
-                    <select name="tipodoc" id="tipodoc" class="frm-input">
-                        <option value="">Seleccione una opcion..</option>
+    <main>
+		<form action="" class="formulario" id="formulario">
+            <!--Grupo: Tipo de Documento-->
+            <div class="formulario__grupo" id="grupo__tipoDoc">
+                <label for="tipodoc" class="label">Tipo de Documento</label>
+                <div class="select is-primary formulario__grupo-input" id="arregloo">
+                    <select name="tipodoc" id="tipodoc" class="frm-input" required>
+                        <option value="" checkbox>Seleccione una opcion..</option>
                         <option value="1">Cédula</option>
                         <option value="2">Tarjeta identidad</option>
                         <option value="3">Otro</option>
                     </select>
                 </div>
-                <span class="msn-error">Seleccione un tipo de documento</span>
             </div>
-            <!--Grupo Numero de Documento-->
-            <div class="form-group" id="g-numdoc">
-                <label for="numdoc" class="numdoc">Numero de Documento</label>
-                <div class="form-group-input">
-                    <input class="frm-input" id="numdoc" name="numdoc" type="text" placeholder="Numero de Documento" minlength="8" maxlength="10">
-                    <i class="form-icono fas fa-exclamation-circle"></i>
-                    <span class="msn-error">Solo puedes ingresar números de minimo 8 y 10 digitos</span>
+            <!--Grupo: Numero de Documento-->
+            <div class="formulario__grupo" id="grupo__numdoc">
+                <label for="numdoc" class="label">Numero de Documento</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="input is-primary formulario__input" name="numdoc" id="numdoc" placeholder="Numero de Documento">
                 </div>
+                <p class="formulario__input-error">Solo puedes ingresar números de minimo 8 y 10 digitos</p>
             </div>
-            <!--Grupo Nombre-->
-            <div class="form-group" id="g-nombre">
-                <label for="nombre" class="nombre">Nombre</label>
-                <div class="form-group-input">
-                    <input class="frm-input" id="nombre" name="nombre" type="text" placeholder="Nombre">
-                    <i class="form-icono fas fa-exclamation-circle"></i>
-                    <span class="msn-error">Solo puedes ingresar letras y un maximo de 25 caracteres</span>
+			<!-- Grupo: Nombre -->
+			<div class="formulario__grupo" id="grupo__nombre">
+				<label for="nombre" class="label">Nombre</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="input is-primary formulario__input" name="nombre" id="nombre" placeholder="Nombre">
+				</div>
+				<p class="formulario__input-error">El nombre debe llevar solo letras, no se permite números</p>
+			</div>
+            <!-- Grupo: Apellido -->
+            <div class="formulario__grupo" id="grupo__apellido">
+                <label for="apellido" class="label">Apellido</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="input is-primary formulario__input" name="apellido" id="apellido" placeholder="Apellido">
                 </div>
+                <p class="formulario__input-error">El nombre debe llevar solo letras, no se permite números</p>
             </div>
-            <!--Grupo Apellido-->
-            <div class="form-group" id="g-apellido">
-                <label for="apellido" class="apellido">Apellido:</label>
-                <div class="form-group-input">
-                    <input class="frm-input" id="apellido" name="apellido" type="text" placeholder="Apellido">
-                    <i class="form-icono fas fa-exclamation-circle"></i>
-                    <span class="msn-error">Solo puedes ingresar letras y un maximo de 25 caracteres</span>
+            <div class="formulario__grupo" id="grupo__fecha">
+                <label for="fecha" class="label">Fecha de nacimiento</label>
+                <div class="formulario__grupo-input">
+                    <input class="formulario__input alargo" id="fecha" name="fecha" type="date">
                 </div>
+                <p class="formulario__input-error">Por favor ingresa una fecha.</p>
+            </div>
             <div>
-            <!--Grupo Fecha de Nacimiento-->    
-            <div class="form-group" id="g-fecha">
-                <label for="fecha" class="fecha">Fecha de nacimiento:</label>
-                <div class="form-group-input">
-                    <input class="frm-input" id="fecha" name="fecha" type="text" placeholder="Fecha">
-                    <i class="form-icono fas fa-exclamation-circle"></i>
-                    <span class="msn-error">Debes ingresar una fecha correcta</span>
-                </div>
-            <div>
-            <!--Grupo Correo--> 
-            <div class="form-group" id="g-correo">
-                <label for="correo" class="correo">Correo:</label>
-                <div class="form-group-input">
-                    <input class="frm-input" id="correo" name="correo" type="text" placeholder="Correo">
-                    <i class="form-icono fas fa-exclamation-circle"></i>
-                    <span class="msn-error">El correo no tiene el formato correcto Ej:<b> example@dominio.com</b></span>
-                </div>
-            <div>
-            <!--Grupo Contraseña-->
-            <div class="form-group" id="g-password">
-                <label for="password" class="password">Contraseña:</label>
-                <div class="form-group-input">
-                    <input class="frm-input" id="password" name="password" type="password" placeholder="Contraseña">
-                    <i class="form-icono fas fa-exclamation-circle"></i>
-                    <span class="msn-error">La contraseña debe incluir minimo 8 caracteres, 1 simbolo, 1 mayuscula, 1 minuscula, 1 numero</span>
-                </div>
-            <div>
-            <!--Grupo Contraseña2-->
-            <div class="form-group" id="g-password2">
-                <label for="password2" class="password2">Confirmar Contraseña:</label>
-                <div class="form-group-input">
-                    <input class="frm-input" id="password2" name="password2" type="password" placeholder="Confirmar Contraseña">
-                    <i class="form-icono fas fa-exclamation-circle"></i>
-                    <span class="msn-error">La confirmacion de la contraseña no coinciden</span>
-                </div> 
-            </div>   
-            <!-- Grupo: Terminos y Condiciones -->
-			<div class="form-group" id="g-terminos">
-				<label>
-					<input class="form-checkbox" type="checkbox" name="terminos" id="terminos">
+            <!-- Grupo: Correo Electronico -->
+			<div class="formulario__grupo" id="grupo__correo">
+				<label for="correo" class="label">Correo Electrónico</label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="input is-primary formulario__input" name="correo" id="correo" placeholder="usuario@correo.com">
+				</div>
+				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+			</div>
+			<!-- Grupo: Contraseña -->
+			<div class="formulario__grupo" id="grupo__password">
+				<label for="password" class="label">Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="input is-primary formulario__input" name="password" id="password">
+				</div>
+				<p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+			</div>
+			<!-- Grupo: Contraseña 2 -->
+			<div class="formulario__grupo" id="grupo__password2">
+				<label for="password2" class="label">Repetir Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="input is-primary formulario__input" name="password2" id="password2">
+				</div>
+				<p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+			</div>
+			<!-- Grupo: Terminos y Condiciones -->
+			<div class="formulario__grupo" id="grupo__terminos">
+				<label id="terminosss" class="label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
 					Acepto los Terminos y Condiciones
 				</label>
 			</div>
-
-			<div class="frm-no-enviado" id="frm-no-enviado">
+			<div class="formulario__mensaje" id="formulario__mensaje">
 				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
 			</div>
-
 			<div class="formulario__grupo formulario__grupo-btn-enviar">
 				<button type="submit" class="formulario__btn">Enviar</button>
 				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
 			</div>
-        </form>
-    </div>
-    <script src="js/Ejercicio6.js" defer></script>
-    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+		</form>
+	</main>
+	<script src="js/Ejercicio6.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </body>
 </html>
