@@ -62,14 +62,14 @@ const validarFormulario = (e) =>
 			if (expresiones.fecha.test(e.target.value)) 
 			{
 				document.getElementById('grupo__fecha').classList.remove('formulario__grupo-incorrecto');
-				document.getElementById('grupo__fecha').classList.add('.alargo');
+				document.getElementById('grupo__fecha').classList.add('alargo');
 				document.querySelector('#grupo__fecha .formulario__input-error').classList.remove('formulario__input-error-activo');
 				campos[fecha] = true;
 			}
 			else
 			{
 				document.getElementById('grupo__fecha').classList.add('formulario__grupo-incorrecto');
-				document.getElementById('grupo__fecha').classList.remove('.alargo');
+				document.getElementById('grupo__fecha').classList.remove('alargo');
 				document.querySelector('#grupo__fecha .formulario__input-error').classList.add('formulario__input-error-activo');
 				campos[fecha] = false;
 			}
@@ -103,16 +103,20 @@ const validarCampo = (expresion, input, campo) =>
 	}
 }
 
-const validarPassword2 = () => {
+const validarPassword2 = () => 
+{
 	const inputPassword1 = document.getElementById('password');
 	const inputPassword2 = document.getElementById('password2');
 
-	if(inputPassword1.value !== inputPassword2.value){
+	if(inputPassword1.value !== inputPassword2.value)
+	{
 		document.getElementById(`grupo__password2`).classList.add('formulario__grupo-incorrecto');
 		document.getElementById(`grupo__password2`).classList.remove('formulario__grupo-correcto');
 		document.querySelector(`#grupo__password2 .formulario__input-error`).classList.add('formulario__input-error-activo');
 		campos['password'] = false;
-	} else {
+	} 
+	else 
+	{
 		document.getElementById(`grupo__password2`).classList.remove('formulario__grupo-incorrecto');
 		document.getElementById(`grupo__password2`).classList.add('formulario__grupo-correcto');
 		document.querySelector(`#grupo__password2 .formulario__input-error`).classList.remove('formulario__input-error-activo');
@@ -131,7 +135,7 @@ formulario.addEventListener('submit', (e) =>
 	e.preventDefault();
 
 	const terminos = document.getElementById('terminos');
-	if(campos.usuario && campos.nombre && campos.password && campos.correo && campos.telefono && terminos.checked )
+	if(campos.numdoc && campos.nombre && campos.apellido && campos.fecha && campos.correo && campos.password && terminos.checked)
 	{
 		formulario.reset();
 
@@ -145,7 +149,8 @@ formulario.addEventListener('submit', (e) =>
 		{
 			icono.classList.remove('formulario__grupo-correcto');
 		});
-	} else 
+	} 
+	else 
 	{
 		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
 	}
